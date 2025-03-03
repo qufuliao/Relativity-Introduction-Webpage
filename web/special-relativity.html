@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>狭义相对论</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-image: url('images/universe-background.img');
+            background-attachment: fixed;  /* 固定背景图片 */
+            background-size: cover;  /* 确保背景图片覆盖整个可视区域 */
+            background-position: center;  /* 居中显示背景图片 */
+        }
+        h1, h2 {
+            color: #ffffff;
+        }
+        .concept {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #eaeaea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .example {
+            background-color: #e8f4f8;
+            padding: 10px;
+            border-left: 5px solid #3498db;
+            margin: 10px 0;
+        }
+        .home-button {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            transition: background-color 0.3s;
+        }
+        .home-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="home_page.html" class="home-button">← 返回主页</a>
+        <h1>狭义相对论</h1>
+        <p style="color: #ffffff;">爱因斯坦于1905年提出的物理理论，彻底改变了我们对时间、空间和能量的理解。</p>
+    </header>
+
+    <main>
+        <section class="concept">
+            <h2>1. 光速不变原理</h2>
+            <p>无论观察者如何运动，光在真空中的速度始终保持不变，约为每秒299,792,458米。这与我们日常经验相悖，因为我们习惯于速度相加。</p>
+            
+            <div class="image-placeholder">
+                <!--[光速不变原理示意图：不同运动状态的观察者测量同一光束]-->
+                <img src="images/light_speed_invariance.png" alt="光速不变原理示意图" style="max-width:100%; max-height:100%; border-radius:5px;">
+            </div>
+            
+            <p>举例说明：如果一个人在匀速行驶的火车上向前扔一个球，对于站台上的观察者来说，球的速度是火车速度与投掷速度之和。但如果是发射光线，无论火车速度如何，光速对两个观察者都是一样的。</p>
+        </section>
+
+        <section class="concept">
+            <h2>2. 时间膨胀</h2>
+            <p>运动中的时钟比静止时钟走得慢。也就是说，对于静止观察者来说，运动物体上的时间流逝得更慢。速度越接近光速，时间膨胀效应越明显。</p>
+            
+            <div class="image-placeholder">
+                <!--[时间膨胀示意图：静止参考系与高速运动参考系中的时钟对比]-->
+                <img src="images/time_dilation.gif" alt="光速不变原理示意图" style="max-width:100%; max-height:100%; border-radius:5px;">
+            </div>
+            
+            <div class="example">
+                <h3>实际应用：GPS系统</h3>
+                <p>全球定位系统(GPS)卫星以很高的速度运行，因此其上的原子钟比地面上的时钟每天快约38微秒（相对论效应）。如果不对这种时间差进行校正，GPS的定位误差每天将累积约11千米，使导航系统完全失效。</p>
+            </div>
+        </section>
+
+        <section class="concept">
+            <h2>3. 长度收缩</h2>
+            <p>物体在运动方向上会发生收缩。对静止观察者来说，运动物体在运动方向的长度会变短，收缩程度取决于物体的速度。</p>
+            
+            <div class="image-placeholder">
+                <!--[长度收缩示意图：静止状态与高速运动状态下物体长度的对比]-->
+                <img src="images/length_contraction.png" alt="长度收缩示意图" style="max-width:100%; max-height:100%; border-radius:5px;">
+            </div>
+            
+            <p>例如，如果一根1米长的棒以接近光速运动，在静止观察者看来，它的长度会明显缩短。如果它以光速的86.6%运动，长度将缩短一半，变为0.5米。</p>
+        </section>
+
+        <section class="concept">
+            <h2>4. 质能等价 (E=mc²)</h2>
+            <p>爱因斯坦最著名的公式E=mc²表达了质量和能量的等价关系。任何物质都包含能量，且这个能量等于物质的质量乘以光速的平方。</p>
+            
+            <div class="image-placeholder">
+                <!--[质能转换示意图：物质转化为能量的过程]-->
+                <img src="images/mass_energy_conversion.png" alt="质能转换示意图" style="max-width:100%; max-height:100%; border-radius:5px;">
+            </div>
+            
+            <div class="example">
+                <h3>应用实例：核能</h3>
+                <p>核反应（如核裂变或核聚变）释放的巨大能量正是基于质能等价原理。极小量的物质可以转化为极大量的能量，例如1克物质完全转化为能量可释放约9×10¹³焦耳，相当于2.1万吨TNT爆炸的能量。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>狭义相对论虽然违反直觉，但其预测已在无数实验中得到验证，是现代物理学的基础理论之一。</p>
+    </footer>
+</body>
+</html>

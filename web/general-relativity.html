@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>广义相对论</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+            background-image: url('images/universe-background.img');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .home-button {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            transition: background-color 0.3s;
+        }
+        .home-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <script src="js/spacetime-simulation.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="home_page.html" class="home-button">← 返回主页</a>
+            <h1>广义相对论</h1>
+        </header>
+        
+        <section>
+            <h2>引力的新定义</h2>
+            <p>爱因斯坦在1915年提出了广义相对论，这一理论彻底改变了我们对引力的理解。在广义相对论中，引力不再被视为传统意义上的力，而是<strong>时空弯曲的几何效应</strong>。</p>
+            <p>根据这一理论，质量和能量会使周围的时空弯曲，而物体则沿着这种弯曲的时空中的最短路径（测地线）运动。这种运动被我们感知为引力。</p>
+        </section>
+        
+        <section>
+            <h2>爱因斯坦场方程</h2>
+            <p>广义相对论的核心是爱因斯坦场方程，它描述了物质和能量如何影响时空几何：</p>
+            <p style="text-align: center;"><strong>G<sub>μν</sub> = 8πG/c⁴ · T<sub>μν</sub></strong></p>
+            <p>简单来说，这个方程告诉我们：</p>
+            <ul>
+                <li>左侧（G<sub>μν</sub>）描述了时空的弯曲</li>
+                <li>右侧（T<sub>μν</sub>）描述了物质和能量的分布</li>
+                <li>两者之间存在着精确的数学关系</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>广义相对论的预言</h2>
+            <p>广义相对论做出了许多重要预言，其中许多已被实验证实：</p>
+            <ol>
+                <li><strong>光线弯曲：</strong>光线经过大质量天体附近时会发生弯曲，这在1919年的日食观测中首次得到验证。</li>
+                <li><strong>黑洞：</strong>当足够大质量的物体压缩到极小体积时，会形成时空极度弯曲的区域，连光都无法逃脱。</li>
+                <li><strong>引力波：</strong>快速运动的大质量物体会产生时空涟漪，以波的形式传播，在2015年首次被直接探测到。</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>时空弯曲演示</h2>
+            <div id="spacetime-container" style="width: 100%; height: 400px;"></div>
+            <p style="text-align: center;">上图演示了重物（如恒星或黑洞）如何使时空弯曲，以及光线如何沿着弯曲的路径行进。</p>
+        </section>
+    </div>
+</body>
+</html>
